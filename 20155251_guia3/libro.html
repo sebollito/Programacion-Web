@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libro de Visitas</title>
+    <style>
+      body {
+        background-color: cyan;
+      }
+      div {
+        text-align: center;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Libro de visitas</h1>
+      <form
+        name="miformulario"
+        action="mailto:sebastianjorgecruz25@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <table>
+          <tr>
+            <th>
+              Datos personales:
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Nombre:
+              <input
+                type="text"
+                name="nombre"
+                id="name"
+                placeholder="John"
+                size="7"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Apellidos:
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Smith Santana"
+                size="30"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <table>
+          <tr>
+            <th>Indica un pseudónimo y una contraseña:</th>
+          </tr>
+          <tr>
+            <td>
+              pseudónimo:
+              <input
+                type="text"
+                name="user"
+                id="user"
+                placeholder="fulano123"
+                maxlength="16"
+                size="8"
+                required
+              />
+              contraseña:
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="************"
+                maxlength="12"
+                size="8"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <table>
+          <tr>
+            <th>Otros datos:</th>
+          </tr>
+          <tr>
+            <td>Edad:</td>
+            <td>¿Donde vives?</td>
+            <td>Aficiones:</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="edad" id="edad" required /> 0 - 10
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="provincia"
+                id="provincia"
+                required
+              />Santiago
+            </td>
+            <td><input type="checkbox" name="hobby" id="hobby" />Música</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="edad" id="edad" required />11 - 20
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="provincia"
+                id="provincia"
+                required
+              />Santo Domingo
+            </td>
+            <td><input type="checkbox" name="hobby" id="hobby" />Deportes</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="edad" id="edad" required />21 - 30
+            </td>
+            <td>
+              <input type="radio" name="provincia" id="provincia" required />La
+              Romana
+            </td>
+            <td><input type="checkbox" name="hobby" id="hobby" />Pintura</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="edad" id="edad" required />31 - 40
+            </td>
+            <td>
+              <input type="radio" name="provincia" id="provincia" required />San
+              Cristóbal
+            </td>
+            <td><input type="checkbox" name="hobby" id="hobby" />Lectura</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="edad" id="edad" required />41 o más
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="provincia"
+                id="provincia"
+                required
+              />Otros:
+              <input type="text" name="alternateLocation" size="11" />
+            </td>
+            <td>
+              <input type="checkbox" name="hobby" id="hobby" />Otras:<input
+                type="text"
+                name="alternateHobby"
+                size="11"
+              />
+            </td>
+          </tr>
+        </table>
+        <br /><br />
+        <input type="submit" name="enviar" value="Enviar" />
+        <input type="reset" name="restaurar" value="Restaurar" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de tabla con CSS3</title>
+    <style type="text/css">
+      table.tabla1 {
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.4em;
+        font-style: normal;
+        border-collapse: separate;
+        margin: auto;
+      }
+      .tabla1 th {
+        padding: 15px;
+        color: #fff;
+        text-shadow: 1px 1px 1px #568f23;
+        border: 1px solid #93ce37;
+        border-bottom: 3px solid #9ed929;
+        background-color: #9dd929;
+        background: -moz-linear-gradient(top, #65b6cf, #2c2c2c);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(#65b6cf),
+          to(#2c2c2c)
+        );
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius: 5px 5px 0px 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .tabla1 thead th:empty {
+        background: transparent;
+        border: none;
+      }
+      .tabla1 tfoot td {
+        color: #9cd009;
+        font-size: 32px;
+        text-align: center;
+        padding: 10px 0px;
+        text-shadow: 1px 1px 1px #444;
+      }
+      .tabla1 tbody td {
+        padding: 10px;
+        text-align: center;
+        background-color: #def3ca;
+        border: 2px solid #e7efe0;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        color: #666;
+        text-shadow: 1px 1px 1px #fff;
+      }
+      .tabla1 tbody span.check::before {
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAACqCAMAAAAKqCSwAAABLFBMVEX////yAAD//P/8///1AAD3///4AAD/+f/sAADpAAD//f/3AAD///37AAD/+v/7/fz/9v/kAADq///y//////rw//v///T/ABHfAADo///3//jyCAf///P/+vD/8/X1/+//9uftAA//+PX/maf4eYzrY3fsfIr9uLv/7ur/rKTqhI/cYFjcBAn3ECLw8u/pCg/36fbm0rrn9uPwxb//Ym/taWfo09rhABT/8ubuICLvzrvreW/sennSAADSITH5/+zj//Tq39vnO0v2VF//sK3/1M7hGyjQFx/8gHj/k5L7QlL/89n/wKr/dn76BBvt1sjuFTT/hYv2iqH/6f7rm5r0QTzfIC//nZL/Z2vzJD7/yM7lU2Dm/+L/CCf/vbn2j3zprLPpq5zEBwD8ooiK9iu/AAAGU0lEQVR4nO3aW5PUNhYHcEvW1bZsy5e2R+q22052Z0g83R1CMgzL0BMIJGFIh4SEQGCzt+//HVZmMhQFXbs8bJVFrX4PU/P4L/WRdI66Pc9xHMdxHMdxHMdxHMdxHMdxHMdx/g8Fnu9BaP58AKIkSXyMp47xHoLICGA8dY73gI1SJXDqHO8hTtMA5/hDqNVyLAA/TqfO8d8l7XyxmKkPYFWT5KOP//Tnw6MomDrJHok3nqWvtlOvrmkGAEK8+2Qxda79AsPDTVp+qgfCGJKAH6+mDvUfQEU/CQWo1ohrs7abqfPsYRbU880mKuFnVWg+fobWArHO0tvK95PEo+0O6BpIAjomuuvN1KH2M0E9SI9rQHZrQMKOhZ+n7dSh9gheHQKwuVETEYI1kEDqL3JobVTYfAkGAaQUej2IqjjYqKlz7ZHQXFF4QIipUiSkZvzkpukBiqlz7UEjlTbZKQoBRzUiNdjdapLGt/FiXc3KAv8l1AABBhAX4e3SKxaNlYdVopKGg4EhLQU4Q3e2aZaowMbWuqG9P4gaScHNulYnTb+iOEusrNVz74bQIaoJE5JV17JU0Ty28rDKll8RMFSchRXj/O4c442XBLCcOtceDe0AN4UacjIIfeHPU5j189KmKQD2OU63M9zeqxgT5qQiQ8i/zmxsqWEJcRoV+f0HHIwbCtRC3l02Np6nfhxFlK6W33DBZGV6f826RTSnU+faI0/xAgflt4yYLlXzkNTiO5zPrJz/A9ji7KbZ+5KEpqPW6EGfHsT91LH2gAksovOHppsCAo2TH7+gsWdlm6IijxaPGAdmkNIIaPl9Hkeeb+MJoFSKWy4kMtv/jAke9nEZrQobazWZ4/xbgeQOgDUzg9+XDRzHARtXNejz2TE4q0wFVBzxpyaprVELXz0cNACgA2hg5Aheztg2mvk/kIoLjepKEP6FFySJrVFb/NjsJwAENx2Vvk4vFzWwsQAWh5qTSpqrKlyzH21d0FcWHePjgGJu1Lpr8+bykc1KP3HBielReFeLr2k+3lJj0mSCKDQro1bBdBG9etovgn4LfaVi9SQu+gwvwB80R4/NHZtNEPF1VJjS1J9tm59/EdUvhziPonyjCrrCVMFA3b6KygX63OuLKZs/vMJPNvlnp1xyEsr18TbGsUoTD2LV+3R58joqeNrCsp9yQME4z9SNioRCVBVC5NcSe9uIms7ftP/4WXgVlazvp7Cd9ImiD7L2WQdYp5mUvOv0EgcLdUDjYubTbXeVFMjnOI76aMpabfJ0q2uxNl0zGyOx0/aoOE9zWKi4/ZTwq6i73/K8gJMeq5GXv9whMn5jIsTY5oOHLW6iMihKutRIXkW9o/KowHjK7v8gDvoXx4Sbxtl8+sgkXh9mtI0iRbMXInxdATfTuIAQzyeMWmQx3T6oQ6E1IySsByb0NsPxIgi265ChStT6DPHnE0Z8LfVxc7EjXAoz6DFSETE8bjENEnWvFmgwnT/QQN+cOqY3DqSL87i4BoSZ8piWBAEEuhvz3O8vOiJEHSLEgLxjw4SaNyoI0pd3GeOokoAQXpvtfqvAs2eaMA0I51Wob9nQoSjspY1qim9MSyJMa6Kl1nXYbfO5rs2/BPEK8NNFPnVOo82f+Lik+NFfiQw1MCW7JoLvns5/NOdWJSsGOg5+92x4ncabyF/h2FPfcynJ2O2L2mQFf+tkKIAEtZmqj/uDaOqcRoqXM5wGbbw9HTNKM5WO30sKFHLEpNlsAvFHZu9NnfMNATbHqL68XN+kATuBamHTk+9G9b9XYR2+E5WHv6aRsuk1hV6n+b1xEd+xXkbmRp063xuOMpyen5rz/23idqBW1KbvUmc066Gq3qlVhua497FN2ypWMYyyv4u3o/Jnpkfwc5t+ogDnEMd5+eKdbXW08YrEqtE/gkWSLbbe21FPKVZRMLcp6pWjE2nmLMDEYOqWAGTxe2rzD2KaLCaE5kTWWlv8nqr6uwIMg/6nHoct/S94+fMaG6N6uO0QM6sKBDmrnr80SX3fzkdKDOFXJ2aAFaBe63tz7Fv78uvlxYYeoqobdrsXF0srv/S5kkYHntpe3L/1sp2pIjnwLH2iNpQfzwtM/QJu0lylxR8xp3hPdRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcZz/mX8DpyOGs1GI6pEAAAAASUVORK5CYII=);
+      }
+    </style>
+  </head>
+  <body>
+    <table class="tabla1">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Smart Starter</th>
+          <th>Smart Medium</th>
+          <th>Smart Business</th>
+          <th>Smart Deluxe</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Precio por mes</th>
+          <td>$ 2.90</td>
+          <td>$ 5.90</td>
+          <td>$ 9.90</td>
+          <td>$14.90</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th>Almacenamiento</th>
+          <td>512 MB</td>
+          <td>1 GB</td>
+          <td>2 GB</td>
+          <td>4 GB</td>
+        </tr>
+        <tr>
+          <th>Ancho de banda</th>
+          <td>50 GB</td>
+          <td>100 GB</td>
+          <td>150 GB</td>
+          <td>Ilimitado</td>
+        </tr>
+        <tr>
+          <th>Base de datos MySQL</th>
+          <td>Ilimitado</td>
+          <td>Ilimitado</td>
+          <td>Ilimitado</td>
+          <td>Ilimitado</td>
+        </tr>
+        <tr>
+          <th>Actualizaci&oacute;n</th>
+          <td>$ 19.90</td>
+          <td>$ 12.90</td>
+          <td>libre</td>
+          <td>libre</td>
+        </tr>
+        <tr>
+          <th>PHP 5</th>
+          <td><span class="check"></span></td>
+          <td><span class="check"></span></td>
+          <td><span class="check"></span></td>
+          <td><span class="check"></span></td>
+        </tr>
+        <tr>
+          <th>Ruby on Rails</th>
+          <td><span class="check"></span></td>
+          <td><span class="check"></span></td>
+          <td><span class="check"></span></td>
+          <td><span class="check"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

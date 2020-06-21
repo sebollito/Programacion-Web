@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de resultados</title>
+    <style>
+      tr {
+        height: 30pt;
+      }
+      body {
+        background-color: lightyellow;
+      }
+      div {
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form
+        method="POST"
+        action="mailto:sebastianjorgecruz25@gmail.com"
+        enctype="text/plain"
+      >
+        <table>
+          <tr>
+            <td>
+              Escribe tu nombre: <input type="text" name="name" id="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Introduce tu contraseña:
+              <input
+                type="password"
+                name="password"
+                id="password"
+                maxlength="12"
+                size="3"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Envíame una foto tuya:
+              <input type="file" name="imagen" id="image" value="Examinar..." />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Este manual te parece: <br />
+              <input type="radio" name="score" value="muybueno" checked /><b
+                >Muy bueno</b
+              ><br />
+              <input type="radio" name="score" value="bueno" /><b>Bueno</b>
+              <br />
+              <input type="radio" name="score" value="malo" /><b>Malo</b>
+              <br />
+              <input type="radio" name="score" value="muymalo" /><b>Muy Malo</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                name="actualizaciones"
+                id="actualizaciones"
+              />
+              Avisarme de actualizaciones
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" name="botonenviar" value="Enviar" />
+              <input type="reset" name="botoncancelar" value="Restablecer" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
