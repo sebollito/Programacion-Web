@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analisis de Resultados</title>
+  </head>
+  <body>
+    <script>
+      var num1 = parseInt(prompt("Ingrese primer número:", ""));
+      var num2 = parseInt(prompt("Ingrese segundo número:", ""));
+      var num3 = parseInt(prompt("Ingrese tercer número:", ""));
+
+      // Mayor
+      if (num1 > num2 && num1 > num3) {
+        document.write("El mayor es el " + num1);
+      } else {
+        if (num2 > num3) {
+          document.write("El mayor es el " + num2);
+        } else {
+          document.write("El mayor es el " + num3);
+        }
+      }
+      document.write("<br>");
+      // Menor
+      if (num1 < num2 && num1 < num3) {
+        document.write("El menor es el " + num1);
+      } else {
+        if (num2 < num3) {
+          document.write("El menor es el " + num2);
+        } else {
+          document.write("El menor es el " + num3);
+        }
+      }
+    </script>
+  </body>
+</html>
