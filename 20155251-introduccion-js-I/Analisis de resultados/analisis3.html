@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de Resultados</title>
+  </head>
+  <body>
+    <script>
+      var num1 = parseInt(prompt("Ingrese el primer número:", ""));
+      var num2 = parseInt(prompt("Ingrese el segundo número:", ""));
+
+      if (num1 > num2) {
+        var suma = num1 + num2;
+        var diferencia = num1 - num2;
+        document.write("La suma es " + suma + ".");
+        document.write("<br>");
+        document.write("La diferencia es " + diferencia + ".");
+      } else {
+        var producto = num1 * num2;
+        var division = num1 / num2;
+        document.write("El producto es " + producto + ".");
+        document.write("<br>");
+        document.write(
+          "La división del primero respecto al segundos es " + division + "."
+        );
+      }
+    </script>
+  </body>
+</html>

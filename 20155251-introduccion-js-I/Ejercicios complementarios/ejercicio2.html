@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de JavaScript</title>
+    <script>
+      function typeOfTriangle(lado1, lado2, lado3) {
+        if ((lado1 == lado2) == lado3) {
+          document.write("Es un triángulo equilatero.");
+          equilatero++;
+        } else {
+          if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+            document.write("Es un triángulo isóceles.");
+            isoceles++;
+          } else {
+            document.write("Es un triángulo escaleno.");
+            escaleno++;
+          }
+        }
+      }
+      function quantityOfTriangle(triangleType1, triangleType2, triangleType3) {
+        if (triangleType1 < triangleType2 && triangleType1 < triangleType3) {
+          document.write(
+            "El tipo de triángulo con menos cantidad es equilatero."
+          );
+        } else {
+          if (triangleType2 < triangleType3) {
+            document.write(
+              "El tipo de triángulo con menos cantidad es isóceles."
+            );
+          } else {
+            if (triangleType3 < triangleType2) {
+              document.write(
+                "El tipo de triángulo con menos cantidad es escaleno."
+              );
+            } else {
+              document.write(
+                "Hay la misma cantidad de triángulos de diferentes tipos."
+              );
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      var equilatero,
+        isoceles,
+        escaleno = 0;
+      var traingulo1lado1 = parseInt(
+        prompt("Ingrese el valor del lado 1 del primer triángulo:", "")
+      );
+      var traingulo1lado2 = parseInt(
+        prompt("Ingrese el valor del lado 2 del primer triángulo:", "")
+      );
+      var traingulo1lado3 = parseInt(
+        prompt("Ingrese el valor del lado 3 del primer triángulo:", "")
+      );
+      var traingulo2lado1 = parseInt(
+        prompt("Ingrese el valor del lado 1 del segundo triángulo:", "")
+      );
+      var traingulo2lado2 = parseInt(
+        prompt("Ingrese el valor del lado 2 del segundo triángulo:", "")
+      );
+      var traingulo2lado3 = parseInt(
+        prompt("Ingrese el valor del lado 3 del segundo triángulo:", "")
+      );
+      var traingulo3lado1 = parseInt(
+        prompt("Ingrese el valor del lado 1 del tercer triángulo:", "")
+      );
+      var traingulo3lado2 = parseInt(
+        prompt("Ingrese el valor del lado 2 del tercer triángulo:", "")
+      );
+      var traingulo3lado3 = parseInt(
+        prompt("Ingrese el valor del lado 3 del tercer triángulo:", "")
+      );
+
+      typeOfTriangle(traingulo1lado1, traingulo1lado2, traingulo1lado3);
+      document.write("<br>");
+      typeOfTriangle(traingulo2lado1, traingulo2lado2, traingulo2lado3);
+      document.write("<br>");
+      typeOfTriangle(traingulo3lado1, traingulo3lado2, traingulo3lado3);
+      document.write("<br>");
+      quantityOfTriangle(equilatero, isoceles, escaleno);
+    </script>
+  </body>
+</html>
