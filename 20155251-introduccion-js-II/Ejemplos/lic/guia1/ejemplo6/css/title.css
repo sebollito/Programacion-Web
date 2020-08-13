@@ -1,0 +1,18 @@
+.moneyOn {
+  border: outset 6px DarkViolet;
+  background-color: Thistle;
+  text-align: center;
+  font-family: "Franklin Gothic Medium";
+  font-weight: 700;
+  font-size: 15pt;
+  color: BlueViolet;
+}
+.moneyOff {
+  border: inset 5px maroon;
+  background-color: MistyRose;
+  text-align: center;
+  font-family: "Franklin Gothic Medium";
+  font-weight: 700;
+  font-size: 15pt;
+  color: Sienna;
+}
